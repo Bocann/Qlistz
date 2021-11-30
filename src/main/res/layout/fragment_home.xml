@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".homeFragment"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:context=".MainActivity"
+        android:background="@color/background"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/viewheaderbackground"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            >
+
+            <TextView
+                android:gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Selamat Datang"
+                android:textColor="@color/icon"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:gravity="top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Boby Candra"
+                android:textColor="@color/primarytext"
+                android:textSize="25dp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical"
+                    >
+                    <CalendarView
+                        android:id="@+id/cal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="350dp"
+                        android:background="@drawable/bg_calender"
+                        android:outlineAmbientShadowColor="@color/white"
+                        android:outlineSpotShadowColor="@color/white">
+
+                    </CalendarView>
+                </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:orientation="vertical"
+            >
+        <RelativeLayout
+
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            >
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:padding="15dp"
+                android:src="@drawable/ic_today" />
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Kegiatan Terdekat"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primarytext"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_cardutama"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_notification" />
+                //switch
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                   >
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:thumb="@drawable/bg_thumb"
+                        app:track="@drawable/bg_track"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textColor="@color/primarytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="BELANJA KEBUTUHAN BULANAN"
+                        android:layout_weight="1"
+                        android:paddingBottom="1dp"
+                        android:textSize="15dp"
+                        android:gravity="bottom"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="19 OKTOBER 2021"
+                        android:gravity="top"
+                        android:layout_weight="1" />
+
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_cardutama"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_notification" />
+                //switch
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    >
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:thumb="@drawable/bg_thumb"
+                        app:track="@drawable/bg_track"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textColor="@color/primarytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="BELANJA KEBUTUHAN BULANAN"
+                        android:layout_weight="1"
+                        android:paddingBottom="1dp"
+                        android:textSize="15dp"
+                        android:gravity="bottom"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="19 OKTOBER 2021"
+                        android:gravity="top"
+                        android:layout_weight="1" />
+
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_cardutama"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_notification" />
+                //switch
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    >
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:thumb="@drawable/bg_thumb"
+                        app:track="@drawable/bg_track"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textColor="@color/primarytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="BELANJA KEBUTUHAN BULANAN"
+                        android:layout_weight="1"
+                        android:paddingBottom="1dp"
+                        android:textSize="15dp"
+                        android:gravity="bottom"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="19 OKTOBER 2021"
+                        android:gravity="top"
+                        android:layout_weight="1" />
+
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_cardutama"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_notification" />
+                //switch
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    >
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:thumb="@drawable/bg_thumb"
+                        app:track="@drawable/bg_track"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textColor="@color/primarytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="BELANJA KEBUTUHAN BULANAN"
+                        android:layout_weight="1"
+                        android:paddingBottom="1dp"
+                        android:textSize="15dp"
+                        android:gravity="bottom"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="19 OKTOBER 2021"
+                        android:gravity="top"
+                        android:layout_weight="1" />
+
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

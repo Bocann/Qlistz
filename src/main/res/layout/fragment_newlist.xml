@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newlistFragment"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/background"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/viewheaderbackground"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/bg_card"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="QList"
+                android:textColor="@color/icon"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:gravity="top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Design by DesInt"
+                android:textColor="@color/primarytext"
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:padding="15dp"
+                android:src="@drawable/ic_playlist_add_24dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="ADD NEW LIST"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primarytext"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="510dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/bg_setting"
+            android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                   android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <EditText
+                        android:paddingLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_new"
+                        android:hint="List Label"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:paddingLeft="5dp"
+                        android:id="@+id/dte"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_new"
+                        android:hint="Set Date"
+                        android:textSize="14dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:layout_width="220dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:paddingLeft="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/bg_new"
+                            android:hint="New Item"
+                            android:textSize="14dp" />
+                        <EditText
+
+                            android:layout_width="115dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:paddingLeft="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/bg_new"
+                            android:hint="Quantity"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="20dp"
+
+                            android:layout_marginStart="10dp"
+                            android:gravity="top"
+
+
+
+                            android:layout_marginEnd="10dp"
+
+
+                            android:background="@drawable/bg_new"
+                            android:hint="Note"
+                            android:textSize="14dp" />
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="190dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+
+                           android:textStyle="bold"
+                            android:text="TOTAL"
+                            android:textSize="14dp"
+                            android:textColor="@color/primarytext"
+                            />
+                        <TextView
+
+                            android:layout_width="115dp"
+                            android:layout_height="50dp"
+
+                            android:layout_marginTop="10dp"
+
+                            android:layout_marginBottom="10dp"
+
+                            android:text="Rp. 100.000"
+                            android:textStyle="bold"
+                            android:textColor="@color/red"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="ADD LIST"
+                    android:background="@drawable/bg_button"
+                    android:backgroundTint="@color/icon"
+
+                    />
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+
+                    android:text="CLEAR"
+                    android:background="@drawable/bg_button"
+
+                    android:layout_alignParentLeft="true"
+
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
